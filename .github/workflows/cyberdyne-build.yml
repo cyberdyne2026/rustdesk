@@ -3,6 +3,9 @@ name: Cyberdyne Build
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-cyberdyne-build:
     uses: ./.github/workflows/flutter-build-cyberdyne.yml
